@@ -1,0 +1,37 @@
+pkg:
+  ide: none
+
+  meta:
+    name: cosa-servo
+    description: A wio package for controlling Servo with Cosa
+    author: Mikael Patel <mikael.patel@gmail.com> (https://github.com/mikaelpatel/)
+    contributors:
+    - Deep Dhillon <deep@deepdhillon.ca> (https://github.com/dhillondeep)
+    version: 1.0.0
+    keywords:
+    - avr
+    - c
+    - c++
+    - wio
+    - cosa
+    license: MIT
+
+  config:
+    minimum_wio_version: 0.3.2
+    supported_platforms:
+    - avr
+    supported_frameworks:
+    - cosa
+    supported_boards:
+    - all
+
+  compile_options:
+    platform: avr
+
+targets:
+  default: tests
+  create:
+    tests:
+      src: tests
+      framework: cosa
+      board: uno
