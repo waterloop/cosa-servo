@@ -1,8 +1,15 @@
-# cosa-servo
+# Cosa Servo
 
-This is a wio avr package.
+This is a wio package for controlling servos using Cosa.
 
-To include this package as a dependency:
+**Wio Version**: >=0.3.2
+
+**Platform**: AVR
+
+**Framework**: Cosa
+
+**Board**: All AVR boards supported
+
 ```bash
-wio pac add {{PROJECT_NAME}}@^0.0.1
+wio install cosa-servo@latest --save
 ```
