@@ -1,15 +1,17 @@
 # Cosa Servo
 
-This is a wio package for controlling servos using Cosa.
+This is a wio package for Cosa that allows access to Servo and provides functionality to control them
 
-**Wio Version**: >=0.3.2
+## Usage
 
-**Platform**: AVR
+Define a servo using `Servo servo(0, Board::D9)` and start it using `Servo::begin()`
 
-**Framework**: Cosa
+Control the servo using:
+```cpp
+servo.angle(10);
+```
 
-**Board**: All AVR boards supported
-
+## Install
 ```bash
-wio install cosa-servo@latest --save
+wio install cosa-servo
 ```
